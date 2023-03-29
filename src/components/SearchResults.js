@@ -1,4 +1,5 @@
-export default function SearchResults({getMovies,setSearch}){
+
+export default function SearchResults({getMovies,setSearch,movies}){
 
     const handleSubmit = (event) =>{
         event.preventDefault()
@@ -9,10 +10,9 @@ export default function SearchResults({getMovies,setSearch}){
         console.log(event.target.value)
     }
 
-
     return (
         <form onSubmit={handleSubmit}>
-            <input type="search" placeholder="Fast and Furious" onChange={handleSearch}/>
+            <input type="search" placeholder="Fast and Furious" onChange={handleSearch}  />
             <button type="submit" onClick={getMovies}></button>
         </form>
     )
