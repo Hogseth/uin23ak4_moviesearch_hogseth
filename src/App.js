@@ -19,12 +19,6 @@ function App() {
         }
     }
 
-    const checkSearch = async() =>{
-      if (search.length > 2){
-
-      }
-    }
-
     useEffect(() =>{
         getMovies()
     },[])
@@ -33,7 +27,7 @@ function App() {
     <Routes>
       <Route element={<Layout/>}>
         <Route index element={<Main search={search} movies={movies} getMovies={getMovies} setSearch={setSearch}/>}/>
-        <Route path=':Title' element={<MoviePage movies={movies}/>}/>
+        <Route path=':slug' element={<MoviePage movies={movies}/>}/>
       </Route>
     </Routes>
   )

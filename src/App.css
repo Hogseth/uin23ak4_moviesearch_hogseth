@@ -37,6 +37,15 @@
   }
 }
 
+header{
+  background-color: rgb(35, 30, 30);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .moviecard{
   border: 1px solid black;
   width: 300px;
@@ -44,19 +53,31 @@
   margin: 1rem;
   padding: .5rem;
   height: auto;
+  background-color:rgb(53, 48, 48);
+  box-shadow: 10px 5px 5px black;
+}
 
+h2{
+  color: white;
+  text-decoration: none;
+}
+
+.moviecard p{
+  text-decoration: none;
+  color: white;
 }
 
 .movies{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  background-color:#f08d30;
 }
 
 h1{
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
+  margin: 0;
+  color: orange;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 form{
@@ -68,12 +89,65 @@ input{
   height: 40px;
   width: 100%;
   max-width: 400px;
+  border-radius: 5px 0 0 5px;
+  border:#282c34;
 }
 
 button{
-  width: 50px;
+  width: 70px;
+  border:#282c34;
 }
 
 #container{
   background-color: #f08d30;
+  height: 100%;
+}
+
+.movie-article{
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  justify-content: center;
+  height: auto;
+}
+
+.movie-info h2{
+  display: flex;
+  justify-content: center;
+}
+
+.movie-article img {
+  padding: 0;
+  padding-left: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 5%;
+}
+
+.movie-info{
+  background-color: rgb(35, 30, 30);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  height: 200px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.movie-info p{
+  color: white;
+  font-weight: bold;
+}
+
+.movie-info a{
+  color: red;
+  font-weight: bold;
+}
+
+.searchbar{
+  background-color: rgb(35, 30, 30);
 }

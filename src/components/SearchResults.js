@@ -11,9 +11,11 @@ export default function SearchResults({getMovies,setSearch,movies}){
     }
 
     return (
+        <section className="searchbar">
         <form onSubmit={handleSubmit}>
             <input type="search" placeholder="Fast and Furious" onChange={handleSearch}  />
-            <button type="submit" onClick={getMovies}></button>
+            <button type="submit" onClick={getMovies}>Search!</button>
         </form>
+        </section>
     )
 }
